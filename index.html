@@ -16,6 +16,32 @@
                 height: 100%;
             }
             
+            #sections a {
+                color:white;
+                text-decoration: none;
+                padding-right: 10px;
+                padding-left: 10px;
+                border-right: 1px solid #BB4545;
+                position: relative;
+                top: 9px;
+                font-size: 14px;
+                
+            }
+            #sections #first {
+                margin-left: 40px;
+            }
+            
+            #sections #last {
+                border-right: 0px solid #BB4545;
+            }
+            
+            #sections #more-img {
+                height: 15px;
+                position:relative;
+                top: 12px;
+                margin-left: -10px;
+            }
+            
             
             
             #top-bar {
@@ -34,6 +60,8 @@
             #signin {
                 
             }
+            
+            
             
             .topbar-label {
                 font-size: 14px;
@@ -86,7 +114,8 @@
             #header {
                 background-color: #BB1919;
                 margin: 0;
-                padding: 0;
+                padding-top: 3px;
+                padding-bottom: 3px;
                 border: 0;
                 font-size: 100%;
                 font: inherit;
@@ -97,65 +126,93 @@
                 text-decoration: none;
             }
             
+            a:hover {
+                text-decoration: none;
+            }
+            
+            a:visited {
+                text-decoration: none;
+                color:black;
+            }
+            
             
             
             #sections {
                 background-color: #A91717;
+                height:35px;
+            }
+            
+            .container {
+                width: 1620px;
             }
             
         </style>
     </head>
     
     <body style="margin:0;padding:0;border:0;">
+        <div class="container">
         
-        <div id="top-bar">
-            <img id="logo" src="bbc-blocks-dark.png"/>
-            
-            <div id="signin" class="topbar-section">
-                <a href=""><img src="sign-in.png" height="34px" style="margin-top: 3px; margin-right: 10px;"/></a>
+            <div id="top-bar">
+                <img id="logo" src="bbc-blocks-dark.png"/>
+
+                <div id="signin" class="topbar-section">
+                    <a href=""><img src="sign-in.png" height="34px" style="margin-top: 3px; margin-right: 10px;"/></a>
+                </div>
+
+                <div class="topbar-section">
+                    <a href=""><span class="topbar-label"><b>News</b></span></a>
+                </div>
+
+                <div class="topbar-section">
+                    <a href=""><span class="topbar-label"><b>Sport</b></span></a>
+                </div>
+
+                <div class="topbar-section">
+                    <a href=""><span class="topbar-label"><b>Weather</b></span></a>
+                </div>
+
+                <div class="topbar-section">
+                    <a href=""><span class="topbar-label"><b>Shop</b></span></a>
+                </div>
+
+                <div class="topbar-section">
+                    <a href=""><span class="topbar-label"><b>Earth</b></span></a>
+                </div>
+
+                <div class="topbar-section">
+                    <a href=""><span class="topbar-label"><b>Travel</b></span></a>
+                </div>
+
+                <div class="topbar-section">
+                    <a href=""><span id="topbar-more"><b>More</b></span></a>
+                    <img id="topbar-more-img" src="bbc-more.png"/>
+                </div>
+
+                <div class="topbar-section">
+                    <input type="text" placeholder="Search" id="topbar-search"/>
+                    <img src="search.png" id="topbar-search-img"/>
+                </div>
             </div>
-            
-            <div class="topbar-section">
-                <span class="topbar-label"><b>News</b></span>
+
+            <div id="header">
+                <a href="http://bbc.com/news" style="color:white;margin-left:50px;font-size:44px;">NEWS</a>
             </div>
-            
-            <div class="topbar-section">
-                <span class="topbar-label"><b>Sport</b></span>
+
+            <div id="sections">
+                <a href="" id="first">Home</a>
+                <a href="">Video</a>
+                <a href="">World</a>
+                <a href="">US & Canada</a>
+                <a href="">UK</a>
+                <a href="">Business</a>
+                <a href="">Tech</a>
+                <a href="">Science</a>
+                <a href="">Magazine</a>
+                <a href="">Entertainment & Arts</a>
+                <a href="">Health</a>
+                <a href="" id="last">More</a>
+                <img src="sections-more.png" id="more-img"/>
             </div>
-            
-            <div class="topbar-section">
-                <span class="topbar-label"><b>Weather</b></span>
-            </div>
-            
-            <div class="topbar-section">
-                <span class="topbar-label"><b>Shop</b></span>
-            </div>
-            
-            <div class="topbar-section">
-                <span class="topbar-label"><b>Earth</b></span>
-            </div>
-            
-            <div class="topbar-section">
-                <span class="topbar-label"><b>Travel</b></span>
-            </div>
-            
-            <div class="topbar-section">
-                <span id="topbar-more"><b>More</b></span>
-                <img id="topbar-more-img" src="bbc-more.png"/>
-            </div>
-            
-            <div class="topbar-section">
-                <input type="text" placeholder="Search" id="topbar-search"/>
-                <img src="search.png" id="topbar-search-img"/>
-            </div>
-        </div>
-        
-        <div id="header">
-            <a href="http://bbc.com/news" style="color:white;margin-left:5%;font-size:48px;font-family:'Open Sans';">NEWS</a>
-        </div>
-        
-        <div id="sections">
-            <a href="" style="color:white;margin:2% 2% 2% 5%;font-size:16px;font-family:'Open Sans';">Home</a>
         </div>
         
     </body>
