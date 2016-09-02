@@ -6,23 +6,84 @@
         
         
         <style>
+            body {
+                font-family: Helvetica, Arial, sans-serif;
+            }
             
-            .top-bar {
+            .topbar-section {
+                border-left: 1px #CCCCCC solid;
+                float: left;
+                height: 100%;
+            }
+            
+            
+            
+            #top-bar {
                 position:relative;
+                height: 42px;
             }
             
-            .logo {
-                margin: .5% 1% .5% 2%;
+            #logo {
+                margin-top: 10px;
+                margin-left: 50px;
+                margin-right: 10px;
+                width: 80px;
+                float:left;
             }
             
-            .top-divider {
-                width: 10px;
-                height: 100px;
+            #signin {
+                
+            }
+            
+            .topbar-label {
+                font-size: 14px;
+                text-align: center;
+                float:left;
+                position:relative;
+                top: 12px;
+                left: 8px;
+                margin-right: 16px;
+            }
+            
+            #topbar-more {
+                font-size: 14px;
+                text-align: center;
+                float:left;
+                position:relative;
+                top: 12px;
+                left: 8px;
+                margin-right: 100px;
+            }
+            
+            #topbar-more-img {
+                height: 15px;
+                position:relative;
+                top:15px;
+                right:10px;
+            }
+            
+            #topbar-search {
+                position:relative;
+                left:10px;
+                background-color: #E4E4E4;
+                border: 0;
+                padding: 5px 20px 4px 10px;
+                font-size: 12px;
+                font-weight: bold;
+                color:black;
+                z-index: 1;
+            }
+            #topbar-search-img {
+                height:25px;
+                position:relative;
+                top: 8px;
+                left: 6px;
             }
             
             
             
-            .header {
+            
+            #header {
                 background-color: #BB1919;
                 margin: 0;
                 padding: 0;
@@ -38,7 +99,7 @@
             
             
             
-            .sections {
+            #sections {
                 background-color: #A91717;
             }
             
@@ -47,19 +108,54 @@
     
     <body style="margin:0;padding:0;border:0;">
         
-        <div class="top-bar">
-            <img class="logo" src="bbc-blocks-dark.png"/>
+        <div id="top-bar">
+            <img id="logo" src="bbc-blocks-dark.png"/>
             
-            <span class="top-divider"></span>
+            <div id="signin" class="topbar-section">
+                <a href=""><img src="sign-in.png" height="34px" style="margin-top: 3px; margin-right: 10px;"/></a>
+            </div>
             
+            <div class="topbar-section">
+                <span class="topbar-label"><b>News</b></span>
+            </div>
+            
+            <div class="topbar-section">
+                <span class="topbar-label"><b>Sport</b></span>
+            </div>
+            
+            <div class="topbar-section">
+                <span class="topbar-label"><b>Weather</b></span>
+            </div>
+            
+            <div class="topbar-section">
+                <span class="topbar-label"><b>Shop</b></span>
+            </div>
+            
+            <div class="topbar-section">
+                <span class="topbar-label"><b>Earth</b></span>
+            </div>
+            
+            <div class="topbar-section">
+                <span class="topbar-label"><b>Travel</b></span>
+            </div>
+            
+            <div class="topbar-section">
+                <span id="topbar-more"><b>More</b></span>
+                <img id="topbar-more-img" src="bbc-more.png"/>
+            </div>
+            
+            <div class="topbar-section">
+                <input type="text" placeholder="Search" id="topbar-search"/>
+                <img src="search.png" id="topbar-search-img"/>
+            </div>
         </div>
         
-        <div class="header">
-            <a href="http://bbc.com/news" style="color:white;margin-left:2%;font-size:48px;font-family:'Open Sans';">NEWS</a>
+        <div id="header">
+            <a href="http://bbc.com/news" style="color:white;margin-left:5%;font-size:48px;font-family:'Open Sans';">NEWS</a>
         </div>
         
-        <div class="sections">
-            <a href="" style="color:white;margin:2% 2% 2% 2%;font-size:16px;font-family:'Open Sans';">Home</a>
+        <div id="sections">
+            <a href="" style="color:white;margin:2% 2% 2% 5%;font-size:16px;font-family:'Open Sans';">Home</a>
         </div>
         
     </body>
